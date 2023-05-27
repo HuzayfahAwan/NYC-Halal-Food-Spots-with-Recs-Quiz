@@ -1,0 +1,157 @@
+/* MY CSS */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar {
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: black;
+}
+
+.navbar-end {
+  border-left: solid;
+  border-color: black;
+  border-width: 1.25px;
+}
+
+#gohome {
+  color: #e02e2b;
+}
+
+.navbar-end:hover, #gohome:hover {
+  background-color: #eb4034;
+  color: #f6fa0f;
+  transition: 0.5s;
+}
+
+#halallogo {
+  border-right: solid;
+  border-color: black;
+  border-width: 1.25px;
+}
+
+#titletext {
+  font-family: "Tahoma", Verdana, sans-serif;
+  align-self: center;
+}
+
+#overlap {
+  position: relative;
+}
+
+#bodypic {
+  position: absolute;
+  z-index: 1;
+  opacity: 80%;
+  filter: brightness(50%);
+  
+  position: absolute;
+  width: 100%;
+}
+
+#message {
+  position: absolute;
+  z-index: 2;
+  top: 35px;
+  left: 50px;
+  right: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  border-style: dashed;
+  border-color: black;
+  border-width: 1px;
+}
+
+#rowofcards {
+  position: absolute;
+  z-index: 2;
+  top: 175px;
+  gap: 50px;
+}
+
+#resultbgcolor {
+  position: absolute;
+  z-index: 2;
+  top: 650px;
+  left: 250px;
+  right: 250px;
+  background: rgba(255, 255, 255, 0.4);
+  border-style: dashed;
+  border-color: black;
+  border-width: 1.5px;
+}
+
+#PersRec {
+  text-align: center;
+  font-size: 35px;
+  color: #e02e2b;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.8px black;
+}
+
+#FoodRec {
+  text-align: center;
+  font-size: 35px;
+  color: #FFCC33;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.8px black;
+}
+
+#NoRec {
+  text-align: center;
+  font-size: 35px;
+  color: #FFCC33;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.8px black;
+}
+
+#placeholdertext {
+  text-align: center;
+  font-size: 35px;
+  color: #FFCC33;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.9px black;
+}
+
+#instructions {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+#holyburgmilkshake {
+  gap: 50px;
+}
+
+.results {
+  gap: 15px;
+}
+
+.title {
+  padding-bottom: 10px;
+}
+
+.content {
+  flex-direction: column;
+}
+
+.card {
+  border-style: groove;
+  border-width: medium;
+  border-color: #FFCC33;
+}
+
+.card-content {
+  border-top: solid;
+  border-width: thin;
+  border-color: #FFCC33;
+}

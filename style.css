@@ -1,0 +1,220 @@
+/* OUR CSS */
+
+.hidden {
+  display: none;
+}
+
+div.spot {
+  background-size: 100% 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+div#halalfoodbanner {
+  background-image: url("https://assets3.thrillist.com/v1/image/3080303/1200x630/flatten;crop_down;webp=auto;jpeg_quality=70");
+  object-fit: cover;
+}
+
+div#bannerflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(150,150,150,0.5);
+}
+
+div.column {
+  background: rgba(150,150,150,0.5);
+}
+
+a.button {
+  gap: 10px;
+  align-self: flex-start; 
+}
+
+h1.NoRec {
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  text-shadow: 2px;
+  background: rgba(150,150,150,0.5);
+}
+
+h1.title-is-1 {
+  -webkit-text-stroke: 1px black;
+}
+
+h2.subtitle {
+  -webkit-text-stroke: 0.5px black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Dancing+Script&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.whole {
+  background: red;
+}
+
+#title {
+  font-size: 100px;
+  font-family: 'Cormorant SC', serif;
+  background: aqua;
+  text-align: center;
+}
+
+#subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+	font-size: 20px;
+	text-align: center;
+  background: #3189F6; 
+	font-family: 'Edu NSW ACT Foundation', cursive;	
+}
+
+#Rec {
+  text-align: center;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  text-shadow: 2px;
+  text-decoration-line: underline;
+  background: rgba(150,150,150,0.5);
+}
+
+#retake {
+  align-self: center;
+}
+
+.questions {
+  background: url(https://mocoshow.com/wp-content/uploads/2020/07/EE18CCEB-9135-47BA-B051-1E359894D6A4.jpeg);
+}
+
+div.results {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background: rgba(150,150,150,0.5);
+}
+
+img.rec {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+footer {
+  font-family: 'Aladin', cursive; 
+  text-align: center;
+  background: yellowgreen;
+}
+
+.cardRow {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card, .clusterCard {
+  width: 300px;
+  border: 1px solid black;
+  min-height: 400px;
+  padding: 20px;
+  color: indianred;
+  background: greenyellow;
+}
+
+div.clusterCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h3.center {
+  text-align: center;
+}
+
+p.input {
+  text-align: center;
+}
+
+div {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+}
+
+/* BULMA CSS */
+.va {
+  display: flex;
+  align-items: center;
+}
+
+.hero,
+.cta {
+  background: url(data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.4296875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E), linear-gradient(52deg, #42475C 0%, #20222E 71%);
+}
+
+.cta {
+  height: 500px;
+  border-top: 10px solid turquoise;
+}
+
+footer {
+  color: white;
+  background: rgb(14, 14, 14) !important;
+}
+
+footer strong {
+  color: turquoise;
+}
+
+footer a {
+  color: red;
+}
+
+.title {
+  color: white;
+  font-weight: 800;
+  font-size: 4rem;
+  font-family: 'Nunito Sans', sans-serif;
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(0, 0, 3);
+}
+
+.subtitle {
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(0, 0, 3);
+}
+
+hr.content-divider {
+  max-width: 75px;
+  height: 5px;
+}
+
+.label {
+  color: white;
+}
+
+input {
+  background: transparent !important;
+  border: 1px solid turquoise !important;
+  color: white !important;
+}
+
+input::placeholder {
+  color: white !important;
+}

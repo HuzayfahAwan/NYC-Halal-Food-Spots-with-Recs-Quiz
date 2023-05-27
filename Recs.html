@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Halal Spot Matcher!</title>
+  <link rel="icon" href="Logo.png" type="image/x-icon">
+  <link href="Recs.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"/>
+</head>
+
+<body>
+
+  <nav class="navbar has-background-warning">
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <div id="halallogo">
+          <img src="Logo.png" width="55" style="padding-top: 5px;">
+        </div>
+      </div>
+      <div class="navbar-middle is-flex">
+        <h1 id="titletext" class="is-size-3 has-text-weight-semibold has-text-black">Halal Spot Matcher &#10071;</h1>
+      </div>
+      <div class="navbar-end">
+        <a href="index.html" class="is-flex">
+          <h1 id="gohome" class="has-text-weight-semibold navbar-item">Back to Home</h1>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="pagecontent">
+    <div id="overlap" class="is-flex">
+      <div class="bodypic has-background-warning">
+        <img id="bodypic" src="https://mocoshow.com/wp-content/uploads/2020/07/EE18CCEB-9135-47BA-B051-1E359894D6A4.jpeg" width="100%" style="height: 170vh;">
+      </div>
+      <div id="message" class="is-size-5 has-text-weight-semibold">
+        <div class="is-flex has-text-centered">
+          Feeling hungry while roaming the streets of the Big Apple 🍎 but don't know where and what you want to eat? Use this quiz to find out which of our top three Halal Food Spots is best for you along with a recommended dish from that spot suited to your tastes!
+        </div>
+      </div>
+      <div id="rowofcards" class="columns is-centered is-variable is-5">
+        <div class="column is-one-quarter">
+          <div class="card" style="background-color: #eb4034;">
+            <div class="card-image">
+              <figure class="image">
+                <img src="https://4.bp.blogspot.com/-kVouOaynBvE/VnOJkOHzx-I/AAAAAAAAG08/EdRbyHv_rck/s640/waq1qdpizb4a3zdme0fk.jpg" title="How Spicy is Too Spicy? — Thinker Belle" alt="Homer Simpson Mouth on Fire"
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content is-flex">
+                <p class="title is-4 has-text-black has-text-weight-semibold has-text-centered">Spiciness</p>
+                <p class="subtitle is-6 has-text-black has-text-weight-medium has-text-centered">Do you prefer your food spicy or NOT spicy?</p>
+                <button id="button-0" class="button is-warning is-rounded is-inverted is-hovered">Click Here to Input!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="card" style="background-color: #eb4034;">
+            <div class="card-image">
+              <figure class="image">
+                <img src="https://saxoncrossfit.com/wp-content/uploads/2019/11/cals.jpg" title="A CALORIE IS JUST A CALORIE RIGHT? - Forging Fitness in Norfolk" alt="Calories"
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content is-flex">
+                <p class="title is-4 has-text-black has-text-weight-semibold has-text-centered">Calories</p>
+                <p class="subtitle is-6 has-text-black has-text-weight-medium has-text-centered">Do you prefer higher-calorie or lower-calorie fast food?</p>
+                <button id="button-1" class="button is-warning is-rounded is-inverted is-hovered">Click Here to Input!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="card" style="background-color: #eb4034;">
+            <div class="card-image">
+              <figure class="image">
+                <img src="https://media0.giphy.com/media/yWTrzwWVS9x1zHPIwT/giphy.gif" title="Eating Broccoli GIFs - Get the best GIF on GIPHY" alt="The Office Michael Scott Eating Broccoli"
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content is-flex">
+                <p class="title is-4 has-text-black has-text-weight-semibold has-text-centered">For the Vegans</p>
+                <p class="subtitle is-6 has-text-black has-text-weight-medium has-text-centered">Do you eat meat or not?</p>
+                <button id="button-2" class="button is-warning is-rounded is-inverted is-hovered">Click Here to Input!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="resultbgcolor">
+        <div id="placeholdertext" class="">
+          After the 3 questions above are answered, a halal spot + food recommendation will be displayed here! 
+          <div id="instructions">
+            (If input instructions are not followed properly, then NO recommendation will be provided)
+          </div>
+        </div>
+        <div id="vegan" class="questions hidden">
+          <div class="results is-flex" style="flex-direction: column;">
+            <h1 id="PersRec">
+              YOUR PERSONALIZED RECOMMENDATION IS:
+            </h1>
+            <img width="250" style="align-self: center;" class="rec" src="https://images.squarespace-cdn.com/content/v1/5c5ce047d86cc973de4af5ee/1589682806457-QWAVQPME8V92Y54B5HX0/HC+Logo.png">
+            <h1 id="FoodRec">VEGAN IMPOSSIBLE BURGER</h1>
+            <img width="250" style="align-self: center;" class="rec" src="https://images.squarespace-cdn.com/content/v1/5c5ce047d86cc973de4af5ee/1556649715834-NSX7W2VIBNOGGYTR1B6N/HolyCow_ImpossibleBurger-3.jpg">
+            <div class="retakebuttondiv is-flex" style="padding-left: 315px; padding-top: 10px; padding-bottom: 20px;">
+              <button onclick="location.reload();" id="retake" class="button is-warning is-rounded is-inverted is-hovered">
+                Retake Quiz!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="spicy-highcalorie-meat" class="questions hidden">
+          <div class="results is-flex" style="flex-direction: column;">
+            <h1 id="PersRec">
+              YOUR PERSONALIZED RECOMMENDATION IS:
+            </h1>
+            <img width="250" style="align-self: center;" class="rec" src="https://www.famousfoodfestival.com/wp-content/uploads/2019/05/1-1.jpg">
+            <h1 id="FoodRec">COMBO MEAT & RICE PLATTER WITH EXTRA HOT SAUCE AND EXTRA WHITE SAUCE</h1>
+            <img width="250" style="align-self: center;" class="rec" src="https://static01.nyt.com/images/2014/12/24/dining/20141224-HUNGRY-slide-5HZ6/20141224-HUNGRY-slide-5HZ6-jumbo.jpg">
+            <div class="retakebuttondiv is-flex" style="justify-content: center; padding-bottom: 20px; padding-top: 10px;">
+              <button onclick="location.reload();" id="retake" class="button is-warning is-rounded is-inverted is-hovered">
+                Retake Quiz!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="spicy-lowcalorie-meat" class="questions hidden">
+          <div class="results is-flex" style="flex-direction: column;">
+            <h1 id="PersRec">
+              YOUR PERSONALIZED RECOMMENDATION IS:
+            </h1>
+            <img width="250" style="align-self: center;" class="rec" src="https://www.famousfoodfestival.com/wp-content/uploads/2019/05/1-1.jpg">
+            <h1 id="FoodRec">COMBO MEAT & RICE PLATTER DRENCHED IN HOT SAUCE WITH NO WHITE SAUCE</h1>
+            <img width="250" style="align-self: center;" class="rec" src="https://i.imgur.com/OxIsDSx.jpeg">
+            <div class="retakebuttondiv is-flex" style="justify-content: center; padding-bottom: 20px; padding-top: 10px;">
+              <button onclick="location.reload();" id="retake" class="button is-warning is-rounded is-inverted is-hovered">
+                Retake Quiz!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="notspicy-highcalorie-meat" class="questions hidden">
+          <div class="results is-flex" style="flex-direction: column;">
+            <h1 id="PersRec">
+              YOUR PERSONALIZED RECOMMENDATION IS:
+            </h1>
+            <img width="250" style="align-self: center;" class="rec" src="https://images.squarespace-cdn.com/content/v1/5c5ce047d86cc973de4af5ee/1589682806457-QWAVQPME8V92Y54B5HX0/HC+Logo.png">
+            <h1 id="FoodRec">HOLY BURGER WITH FRIES AND VAN LEEUWEN MILKSHAKE</h1>
+            <div id="holyburgmilkshake" style="padding-left: 100px;" class="is-flex is-justify-content-center">
+              <img width="250" class="rec" src="https://images.squarespace-cdn.com/content/v1/5c5ce047d86cc973de4af5ee/1549592545123-2920T2GSHVEJQQ2MS646/HolyCow_HolyBurger-2.jpg">
+              <img width="250" class="rec" src="https://images.squarespace-cdn.com/content/v1/5c5ce047d86cc973de4af5ee/1549592993381-5EV0L56WXTSBY100DJ14/HolyCow_StrawberryMilkshake.jpg">
+            </div>
+            <div class="retakebuttondiv is-flex" style="justify-content: center; padding-bottom: 20px; padding-top: 10px;">
+              <button onclick="location.reload();" id="retake" class="button is-warning is-rounded is-inverted is-hovered">
+                Retake Quiz!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="notspicy-lowcalorie-meat" class="questions hidden">
+          <div class="results is-flex" style="flex-direction: column;">
+            <h1 id="PersRec">
+              YOUR PERSONALIZED RECOMMENDATION IS:
+            </h1>
+            <img width="250" style="align-self: center;" class="rec" src="https://static01.nyt.com/images/2017/08/30/dining/30HUNGRY-SAMIS-KABAB-slide-GN86/30HUNGRY-SAMS-KEBOB-slide-GN86-jumbo.jpg">
+            <h1 id="FoodRec">CHICKEN AFGHANI KABAB</h1>
+            <img width="250" style="align-self: center;" class="rec" src="https://img.cdn4dd.com/p/fit=cover,width=1200,height=1200,format=auto,quality=50/media/photos/d659c8eb-7776-4d77-87d5-6e6e99e54d93-retina-large-jpeg">
+            <div class="retakebuttondiv is-flex" style="justify-content: center; padding-bottom: 20px; padding-top: 10px;">
+              <button onclick="location.reload();" id="retake" class="button is-warning is-rounded is-inverted is-hovered">
+                Retake Quiz!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="norec" class="questions hidden">
+          <div class="results is-flex" style="flex-direction: column;">
+            <h1 id="PersRec">
+              YOUR PERSONALIZED RECOMMENDATION IS:
+            </h1>
+            <h1 id="NoRec">NONE (PLEASE FOLLOW THE INPUT INSTRUCTIONS NEXT TIME!)</h1>
+            <div class="retakebuttondiv is-flex" style="justify-content: center; padding-bottom: 20px; padding-top: 10px;">
+              <button onclick="location.reload();" id="retake" class="button is-warning is-rounded is-inverted is-hovered">
+                Retake Quiz!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script src="Recs.js" defer></script>
+  
+</body>
+
+</html>
