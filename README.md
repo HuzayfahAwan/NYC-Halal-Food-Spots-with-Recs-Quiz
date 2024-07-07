@@ -6,4 +6,6 @@
 
 - The quizzes instructions must be followed exactly how the website says, otherwise no food recommendation will be provided to the user.
 
-- Fork the provided Replit link and then open the website in a new tab to view it.
+- Fork the provided Repl link and then open the website in a new tab to view it.
+
+Repl Link: https://replit.com/@HuzayfahAwan/NYC-Halal-Food-Spots-Project
